@@ -1,22 +1,23 @@
 <template>
   <div id="app">
+    <m-nav></m-nav>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Nav from '@/components/Nav/Nav'
 export default {
-  name: 'app'
+  name: 'app',
+  components:{
+    'm-nav':Nav
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    width: 100%;
+    height: 100%;
+  }
 </style>

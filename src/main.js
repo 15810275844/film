@@ -3,8 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
-Vue.config.productionTip = false
+import './commons/style/style.less'
+import axios from 'axios';
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
@@ -12,4 +13,6 @@ new Vue({
   router,
   template: '<App/>',
   components: { App }
-})
+});
+
+Vue.prototype.$http = axios

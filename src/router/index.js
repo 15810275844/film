@@ -9,10 +9,13 @@ import Detail from '@/components/Detail/Detail'
 // 后台頁面
 import adminList from '@/admin/List/List'
 import adminHome from '@/admin/Home/Home'
+import adminChang from '@/admin/Chang/Chang'
+
 
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
   routes: [
     {
       path: '/home',
@@ -20,7 +23,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/detail',
+      path: '/detail/:id',
       name: 'detail',
       component: Detail
     },
@@ -33,6 +36,11 @@ export default new Router({
       path: '/adminHome',
       name: 'adminHome',
       component: adminHome
+    },
+    {
+        path:'/adminChang/:id',
+        name:'adminChang',
+        component:adminChang
     },
     {
       path: '*',

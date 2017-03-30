@@ -1,9 +1,8 @@
 <template>
     <div>
-        <router-link to="home">首页</router-link>
-        <router-link to="detail">详情</router-link>
-        <router-link to="adminHome">admin首页</router-link>
-        <router-link to="adminList">admin列表</router-link>
+        <router-link to="/home">首页</router-link>
+        <router-link to="/adminHome">admin首页</router-link>
+        <router-link to="/adminList">admin列表</router-link>
     </div>
 </template>
 
@@ -12,6 +11,9 @@
         text-align: center;
         display: flex;
         width: 100%;
+        line-height:50px;
+        height:50px;
+        background:#fff;
         a{
             flex:1;
         }

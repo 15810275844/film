@@ -7,6 +7,8 @@ import './commons/style/style.less'
 import axios from 'axios';
 Vue.config.productionTip = false;
 
+Vue.prototype.$http = axios
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -15,4 +17,3 @@ new Vue({
   components: { App }
 });
 
-Vue.prototype.$http = axios
